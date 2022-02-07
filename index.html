@@ -5,7 +5,8 @@ title: {{ site.name }}
 
 <div id="home">
   <h1> বেতুয়া ক্লাব এর নাম লিস্ট </h1>
-  ১.   মোখলেসুর রহমান 
+  ```
+১.   মোখলেসুর রহমান 
 ২.   কামাল হুসেইন 
 ৩.   মবিন মিয়া
 ৪.   শাহজাহান মিয়া
@@ -42,7 +43,7 @@ title: {{ site.name }}
 ৩৫...  জাহাঙ্গীর মিয়া
 ৩৬.    আঃ আউয়াল 
 ৩৭.   মোহাম্মদ আলী
-
+```
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
