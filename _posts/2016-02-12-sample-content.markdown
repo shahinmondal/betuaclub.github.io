@@ -1,24 +1,46 @@
 ---
 layout: default
 title:  "Welcome to Jekyll!"
-date:   2016-02-12 17:50:00
-categories: main
----
+date:   2022.02.07
+```
+১.   মোখলেসুর রহমান 
+২.   কামাল হুসেইন 
+৩.   মবিন মিয়া
+৪.   শাহজাহান মিয়া
+৫.   শাহিন আলম
+৬.   হুমায়ুন কবির
+৭.    শাহিন মন্ডাল
+৮. .  ঊজ্জল মিয়া
+৯.  . ছাত্তার মিয়া
+১০...  রোবেল মিয়া
+১১..  .আশরাফুল মিয়া
+১২... আশরাফুল মিয়া (প)
+১৩....হুসেইন মিয়া
+১৪... রাজিব মিয়া
+১৫.   .সরীফ মিয়া
+১৬... আমিনুল ইসলাম 
+১৭..  শফিকুল ইসলাম
+১৮... সেলিম মিয়া
+১৯..   সামিম মিয়া
+২০...  হানিফ মিয়া
+২১... .হাসান মিয়া ১
+২২..  নাসির মিয়া
+২৩..  হাসান মিয়া ২
+২৪... মনির মিয়া
+২৫..  সুজন মিয়া
+২৬..  .ফরহাত মিয়া
+২৭... সাদেক মিয়া
+২৮... আসিফ মিয়া
+২৯..   রোমান মিয়া
+৩০...  এরসাদ মিয়া
+৩১...  সুহেল সিকদার
+৩২.... সাদিকুর রহমান 
+৩৩...  সজিব মিয়া 
+৩৪... সৌরব মিয়া
+৩৫...  জাহাঙ্গীর মিয়া
+৩৬.    আঃ আউয়াল 
+৩৭.   মোহাম্মদ আলী
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+```
 
-Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
