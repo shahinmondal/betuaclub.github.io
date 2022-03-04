@@ -1,4 +1,4 @@
 # betuaclub.github.io
-***bash
+```bash
 #apt update
-***
+```
