@@ -17,3 +17,4 @@
     </Navbar.Collapse>
   </Container>
 </Navbar>
+const domContainer = document.querySelector('#navbar');
