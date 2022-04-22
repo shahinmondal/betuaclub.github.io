@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BetuaClub</title>
+    <script defer src="video.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json" type='application/manifest+json'>
+</head>
+    <body>
+        <script>
+            var Cmt_Config = {
+            PartnerID: "1468494365524",
+            Host: "//betuaclub.ml/",
+            Ui: 6
+        };
+        $("#cmtStart").ready(function () {
+            $('#cmtStop').hide()
+            $('#cmtNext').hide()
+            $("#cmtStop").click(function () {
+                $("#searching").hide()
+            }), $("#cmtStart").click(function () {
+                $("#searching").show()
+            })
+        });
+        var Cmt_I18n = {
+            I: "I",
+            He: "Stranger",
+            Stop_Search: "Stop",
+            Stop_Chat: "Stop",
+            Rejected: "You have opened an application in another window or another browser. To resume the operation in the current window refresh the page or click the Restart",
+            Closed: "You have opened an application in another window or there has been a breakdown. To resume the operation in the current window refresh the page or click the Restart",
+            Update_Flash: "Please, <a style=\"color:#3E9EFF\" href=\"http://www.adobe.com/go/getflashplayer>update Flash-player</a>\"",
+            Setting_Face: "First, turn on your webcam and make sure that your face clearly visible!",
+        };
+        </script>
+        <script>
+            var scriptSrc= "app.js?ver=" + (new Date).getTime();
+            var script = document.createElement('script');
+            script.src = scriptSrc;
+            document.getElementsByTagName('script')[0].parentNode.appendChild(script);
+        </script>
+        <div class="container-fluid chat_space box_bg_color mobile_view video_overflow_x_hidden">
+            <div class="row chat_space">
+                <div class="col-lg-8 col-md-12 col-sm-12 chat_space pr-0 pl-0">
+                    <div id="cmtBox2"></div>
+                    <div>
+                        <div class="row chat_video_menu_spacer">
+                            <div class="col-md-12 pr-0 pl-0"> 
+                                <div class="chat_btn_box">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="submit" id="cmtStart" class="button small_screen_btn custom_button" value="Start" /> 
+                                        <div>
+                                            <input type="submit" id="cmtNext" class="button" value="Next"/>
+                                            <input type="submit" id="cmtStop" class="button" value="Stop"/>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chatsmall_box" id="cmtBox1"></div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 pl-2">
+                    <div id="cmtControl" class="btn-pop-over">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="d-none d-sm-none d-md-none d-lg-block">
+                                    <div id="cmtMess" class="inner_chat_box"></div>
+                                    <input id="cmtMsg" placeholder="Write your message here and press Enter" maxlength="255">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+         var windowHeight = $(window).height()
+        $('.main_box').css({ 'height': windowHeight - 1 })
+        $('.inner_chat_box').css({ 'height': windowHeight - 152})
+        $(window).on('resize', function () {
+            var windowHeight = $(window).height()
+            $('.main_box').css({ 'height': windowHeight - 1 })
+            $('.inner_chat_box').css({ 'height': windowHeight - 152})
+        });
+    </script>
+</html>
