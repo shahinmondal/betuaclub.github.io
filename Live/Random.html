@@ -148,6 +148,30 @@
 	<!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
+	  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyATThhYJsGT3RTD87Z5MBBv6VwqkUtGaqI",
+    authDomain: "betuacalls.firebaseapp.com",
+    databaseURL: "https://betuacalls-default-rtdb.firebaseio.com",
+    projectId: "betuacalls",
+    storageBucket: "betuacalls.appspot.com",
+    messagingSenderId: "179179408047",
+    appId: "1:179179408047:web:7381908afbac92c338e25a",
+    measurementId: "G-Y231TFR9XL"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 <script>
 var Cmt_Config = {
 	PartnerID: "1468494365524",
