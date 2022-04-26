@@ -106,7 +106,53 @@ var script = document.createElement('script');
 script.src = scriptSrc;
 document.getElementsByTagName('script')[0].parentNode.appendChild(script);
 </script>
-    
+    <div class="container-fluid chat_space box_bg_color mobile_view video_overflow_x_hidden">
+	  <div class="row chat_space">
+		<div class="col-lg-8 col-md-12 col-sm-12 chat_space pr-0 pl-0">
+		  <div id="cmtBox2"></div>
+		  <div>
+			<div class="row chat_video_menu_spacer">
+			  <div class="col-md-12 pr-0 pl-0"> 
+				<div class="chat_btn_box">
+				  <div class="d-flex justify-content-center">
+					<input type="submit" id="cmtStart" class="button small_screen_btn custom_button" value="Start" /> 
+					<div>
+					  <input type="submit" id="cmtNext" class="button" value="Next"/>
+					  <input type="submit" id="cmtStop" class="button" value="Stop"/>
+					</div>
+				  </div>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="chatsmall_box" id="cmtBox1"></div>
+		</div>
+		<div class="col-lg-4 col-md-12 col-sm-12 pl-2">
+		  <div id="cmtControl" class="btn-pop-over">
+			<div class="row">
+			  <div class="col-md-12">
+				<div class="d-none d-sm-none d-md-none d-lg-block">
+				  <div id="cmtMess" class="inner_chat_box"></div>
+				  <input id="cmtMsg" placeholder="Write your message here and press Enter" maxlength="255">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </body>
+<script>
+var windowHeight = $(window).height()
+$('.main_box').css({ 'height': windowHeight - 1 })
+$('.inner_chat_box').css({ 'height': windowHeight - 152})
+$(window).on('resize', function () {
+				 var windowHeight = $(window).height()
+				 $('.main_box').css({ 'height': windowHeight - 1 })
+				 $('.inner_chat_box').css({ 'height': windowHeight - 152})
+			 });
+</script>
 <script src="main.js"></script>
 <script type="module">
   // Import the functions you need from the SDKs you need
