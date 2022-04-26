@@ -75,6 +75,32 @@
     <div class="mdc-dialog__scrim"></div>
 </div>
     <script>
+var Cmt_Config = {
+	PartnerID: "1468494365524",
+	Host: "//chatliv.webcam/",
+	Ui: 6
+};
+$("#cmtStart").ready(function () {
+						 $('#cmtStop').hide()
+						 $('#cmtNext').hide()
+						 $("#cmtStop").click(function () {
+												 $("#searching").hide()
+											 }), $("#cmtStart").click(function () {
+																		  $("#searching").show()
+																	  })
+					 });
+var Cmt_I18n = {
+	I: "I",
+	He: "Stranger",
+	Stop_Search: "Stop",
+	Stop_Chat: "Stop",
+	Rejected: "You have opened an application in another window or another browser. To resume the operation in the current window refresh the page or click the Restart",
+	Closed: "You have opened an application in another window or there has been a breakdown. To resume the operation in the current window refresh the page or click the Restart",
+	Update_Flash: "Please, <a style=\"color:#3E9EFF\" href=\"http://www.adobe.com/go/getflashplayer>update Flash-player</a>\"",
+	Setting_Face: "First, turn on your webcam and make sure that your face clearly visible!",
+};
+</script>
+    <script>
 var scriptSrc= "../js/app.js?ver=" + (new Date).getTime();
 var script = document.createElement('script');
 script.src = scriptSrc;
