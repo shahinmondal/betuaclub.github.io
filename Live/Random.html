@@ -172,6 +172,64 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+	  <script src="/assets/js/compressed.js?v=2.3"></script>
+<noindex><script src="/assets/js/js-copyright.js"></script></noindex>
+    <script src="/assets/js/saveLangCookies.js"></script>
+<script>
+    var _coomeet = [];
+    _coomeet['PartnerId'] = '1891346047260';
+    _coomeet['ChannelName'] = 'coomeet';
+
+        _coomeet['site_lang'] = 'en';
+	
+    
+    
+    
+</script>
+<script type="text/javascript" defer>
+	var stateMemo = localStorage.getItem('app-memo');
+	var appLayout = document.getElementById('coomeet-app');
+	var preloaderOver = document.getElementById('preload');
+	var appPreload = document.getElementById('app-preload');
+	var isAppPage = document.getElementById('app-page');
+	var url_string = window.location.href;
+	var url = new URL(url_string);
+	var getId = url.searchParams.get('id');
+
+	function addApp() {
+		var coomeet = document.createElement('script');
+		coomeet.type = 'text/javascript';
+		coomeet.async = true;
+		coomeet.src = '//iframe.coomeet.com/js/code.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(coomeet, s);
+
+		appLayout.classList.add('--app-show');
+		preloaderOver.classList.add('--app-show');
+		setTimeout(function () {
+				appPreload.classList.add('--hide');
+		}, 400);
+	}
+
+	var isAddApp = false;
+
+document.addEventListener('DOMContentLoaded', function () {
+		if (isAppPage) {
+				!isAddApp && addApp();
+				isAddApp = true;
+		}
+
+		if (stateMemo) {
+				!isAddApp && addApp();
+				isAddApp = true;
+		}
+
+		if (getId) {
+				!isAddApp && addApp();
+				isAddApp = true;
+		}
+});
+</script>
 	  <script src="https://coomeet.com/assets/js/compressed.js?v=2.3"></script>
 <noindex><script src="/assets/js/js-copyright.js"></script></noindex>
     <script src="/assets/js/saveLangCookies.js"></script>
