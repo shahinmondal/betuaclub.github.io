@@ -14,12 +14,15 @@ var options = {
   token: null
 };
 
+
+4
+
 // the demo can auto join channel with params in url
 $(() => {
   var urlParams = new URL(location.href).searchParams;
-  options.appid = urlParams.get("appid");
-  options.channel = urlParams.get("channel");
-  options.token = urlParams.get("token");
+  options.appid = urlParams.get("467e6a467e6a84dce84d16b748502d028bc1b8");
+  options.channel = urlParams.get("video-calls");
+  options.token = urlParams.get("a6f5e2ac9404795b49fe3dc6000a718");
   if (options.appid && options.channel) {
     $("#appid").val(options.appid);
     $("#token").val(options.token);
@@ -27,7 +30,7 @@ $(() => {
     $("#join-form").submit();
   }
 })
-
+4
 $("#join-form").submit(async function (e) {
   e.preventDefault();
   $("#join").attr("disabled", true);
